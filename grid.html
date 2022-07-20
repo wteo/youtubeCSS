@@ -1,53 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Grid Practice</title>
-    </head>
+    <header>
+        <title>Grid practice</title>
+        <style>
+            .classGrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 1px;
+                column-gap: 1px;
+            }
+            .red {
+                background-color: red;
+            }
+            .blue {
+                background-color: blue;
+            }
+        </style>
+    </header>
     <body>
-        <div style="
-            display: grid;
-            grid-template-columns: 100px 100px;
-        ">
-            <div 
-                style="background-color:lightblue"
-                >
-                div 1
-            </div>
-            <div 
-                style="background-color:lightpink"
-                >
-                div 2
-                <p>Paragraph</p>
-            </div>
+        <div class="classGrid">
+            <div class="red">Red</div>
+            <div class="blue">Blue</div>
+            <div class="red">Red</div>
+            <div class="blue">Blue</div>
+            <div class="red">Red</div>
+            <div class="blue">Blue</div>
         </div>
-
-        <div style="
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: 100px 100px 200px;
-        ">
-            <div 
-                style="background-color:lightblue"
-                >
-                100px
-            </div>
-            <div 
-                style="background-color:lightpink"
-                >
-                100px
-                <p>Paragraph</p>
-            </div>
-            <div 
-                style="background-color:lightblue"
-                >
-                200px
-            </div>
-            <div 
-                style="background-color:lightpink"
-                >
-                100px
-            </div>
-        </div>
-
     </body>
-</htmL>
+</html>
